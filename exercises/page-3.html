@@ -1,21 +1,31 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Web Page with Sections</title>
+  <meta name="description" content="A sample web page with multiple sections.">
+                            <!--- Berny Rios Alvarado-->
 
-    <title>Web Page with Sections</title>
-
-    <meta name="description" content="A sample web page with multiple sections.">
-
-    <link rel="stylesheet" href="../assets/css/global.css">
 
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-
     <style type="text/tailwindcss">
+
+        body { @apply font-serif bg-blue-200; }
+
         header {
-            @apply pt-8 px-[9%] pb-[42px] md:py-[3%] md:px-[20%];
+             @apply pt-8 px-[9%] pb-[42px] md:py-[3%] md:px-[20%];
+        }
+
+        header h1 {
+            @apply text-6xl md:text-9xl mb-10 font-bold text-blue-800;
+        }
+
+        header h2 {
+            @apply text-3xl md:text-5xl italic text-center text-blue-900;
         }
 
         section {
@@ -23,80 +33,104 @@
         }
 
         section h2 {
-            @apply mt-8;
-        }
-
-        section h3 {
-            @apply mt-6;
+            @apply mt-8 mb-2 text-2xl md:text-4xl font-bold tracking-tight text-blue-600;
         }
 
         section p {
-            @apply mb-4;
+            @apply mb-4 text-lg md:text-2xl leading-10 text-black;
         }
-    </style>
-</head>
 
+        .section-1 {
+            @apply bg-yellow-200;
+        }
+
+        .section-2 {
+            @apply bg-green-200;
+        }
+
+        .section-3 {
+             @apply bg-orange-200;
+        }
+
+        .section-4 h2, .section-4 p {
+             @apply text-black;
+        }
+
+        .section-5 {
+             @apply bg-rose-200;
+        }
+
+        
+    </style> 
+        <link rel="stylesheet" href="../assets/css/global.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="../assets/img/favicons/site.webmanifest">
+    
+</head>    
+    
 <body>
-    <!-- Hero block -->
+
+
+
+ <!-- Hero block -->
     <header>
         <h1>Big heading</h1>
-
         <h2>Smaller sub-heading</h2>
     </header>
 
     <!-- Main content of web page in sections -->
     <main>
-        <section>
+        <section class="section-1">
             <h2>Smaller Heading</h2>
-
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima exercitationem, fuga doloribus sequi sint eveniet nobis nulla obcaecati quibusdam quae, quia aliquam mollitia ea vel ullam dolores natus in quisquam?</p>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, ad. Id dolorum autem eaque debitis quos hic, blanditiis ratione soluta mollitia rem nobis facilis, molestiae explicabo praesentium voluptates, accusamus culpa!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam rem, veritatis in ex eaque excepturi culpa qui, numquam magnam ipsam, ab sapiente molestias? Optio in debitis, odit sapiente sunt deserunt!</p>
         </section>
 
-        <section>
+        <section class="section-2">
             <h2>Smaller Heading</h2>
-
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima exercitationem, fuga doloribus sequi sint eveniet nobis nulla obcaecati quibusdam quae, quia aliquam mollitia ea vel ullam dolores natus in quisquam?</p>
 
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi incidunt omnis nostrum, doloremque quam nam veritatis eius similique sed quos architecto, fugiat perferendis. Quaerat, facilis velit recusandae quos eaque saepe architecto, natus voluptates repudiandae molestias quia illo provident, porro alias!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam rem, veritatis in ex eaque excepturi culpa qui, numquam magnam ipsam, ab sapiente molestias? Optio in debitis, odit sapiente sunt deserunt!</p>
         </section>
 
-        <section>
+        <section class="section-3">
             <h2>Smaller Heading</h2>
-
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima exercitationem, fuga doloribus sequi sint eveniet nobis nulla obcaecati quibusdam quae, quia aliquam mollitia ea vel ullam dolores natus in quisquam?</p>
 
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi incidunt omnis nostrum, doloremque quam nam veritatis eius similique sed quos architecto, fugiat perferendis. Quaerat, facilis velit recusandae quos eaque saepe architecto, natus voluptates repudiandae molestias quia illo provident, porro alias!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam rem, veritatis in ex eaque excepturi culpa qui, numquam magnam ipsam, ab sapiente molestias? Optio in debitis, odit sapiente sunt deserunt!</p>
         </section>
 
-        <section>
+        <section class="section-4">
             <h2>Smaller Heading</h2>
-
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima exercitationem, fuga doloribus sequi sint eveniet nobis nulla obcaecati quibusdam quae, quia aliquam mollitia ea vel ullam dolores natus in quisquam?</p>
 
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi incidunt omnis nostrum, doloremque quam nam veritatis eius similique sed quos architecto, fugiat perferendis. Quaerat, facilis velit recusandae quos eaque saepe architecto, natus voluptates repudiandae molestias quia illo provident, porro alias!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam rem, veritatis in ex eaque excepturi culpa qui, numquam magnam ipsam, ab sapiente molestias? Optio in debitis, odit sapiente sunt deserunt!</p>
         </section>
 
-        <section>
+
+        <section class="section-5">
             <h2>Smaller Heading</h2>
-
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima exercitationem, fuga doloribus sequi sint eveniet nobis nulla obcaecati quibusdam quae, quia aliquam mollitia ea vel ullam dolores natus in quisquam?</p>
-
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi incidunt omnis nostrum, doloremque quam nam veritatis eius similique sed quos architecto, fugiat perferendis. Quaerat, facilis velit recusandae quos eaque saepe architecto, natus voluptates repudiandae molestias quia illo provident, porro alias!</p>
+            
+            <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima ullam, dolore nostrum exercitationem est natus possimus aut excepturi et repellendus explicabo officia illo rem similique laboriosam laudantium dolor obcaecati? Consequuntur natus dicta, rem facilis dolorem dolor corrupti obcaecati quo expedita!</p>
         </section>
 
-        <section>
+        <section class="section-1">
             <h2>Smaller Heading</h2>
-
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima exercitationem, fuga doloribus sequi sint eveniet nobis nulla obcaecati quibusdam quae, quia aliquam mollitia ea vel ullam dolores natus in quisquam?</p>
-
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit ex vero quisquam.</p>
-
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi nostrum consequuntur cupiditate.</p>
+            
             <p><a href="../index.html">Back to Home page</a></p>
+
         </section>
+    
     </main>
     <!-- main content ends here -->
-</body>
 
+</body>
 </html>
+    
+    
