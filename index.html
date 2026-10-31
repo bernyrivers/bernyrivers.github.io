@@ -1,35 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Berny Rios Alvarado 82406-->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>fionnuala Mahon - Creative Digital Designer</title>
-    <meta name="description" content="Freelance Web and Digital Developer crating innovative">
+    <title>Irish, Dublin's premier web agency</title>
+    <meta name="description" content="We help new and growing businesses turn their ideas into attention-grabbing, customer-winning websites.">
 
-    <link rel="stylesheet" href="assets\css\global.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
+    <style type="text/tailwindcss">
+        body { 
+            @apply text-center min-h-screen ;
+
+            background-image: url("assets/img/irelandcoast.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+         }
+
+        header { 
+            @apply pt-8 px-[9%] pb-[42px] md:py-[3%] md:px-[20%];
+         }
+         
+        header h1 {
+            @apply tracking-tighter text-5xl md:text-8xl mb-8;
+        }
+             
+        header h2 {
+            @apply text-3xl md:text-5xl italic;
+        }
+
+        section {
+            @apply pt-8 px-[9%] pb-[42px] md:py-[3%] md:px-[20%];
+        }
+        
+        section h2 {
+            @apply mt-8 tracking-wider;
+        }
+        
+        section h3 {
+            @apply mt-8 mb-6 text-2xl md:text-3xl font-bold uppercase;
+        } 
+
+        section p {
+            @apply mb-6 text-xl md:text-2xl;
+        }
+
+        a { @apply text-green-900
+       
+        decoration-2
+        decoration-blue-700
+        hover:text-green-200
+        hover:decoration-green-700
+        focus:text-green-700
+        focus:decoration-red-700
+        transition-colors duration-300; }
+
+    </style>
+
+    <link rel="stylesheet" href="assets/css/global.css">
     <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png">    
     <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">    
     <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">    
     <link rel="manifest" href="assets/img/favicons/site.webmanifest">
-
-
+        
 </head>
+        
 
 
-<body>
-<h1>Hi, Fionnuala Mahon</h1>
+    <body>  
+    <header>
+    
+        <h1>Irish Web Agency</h1>
+        <h2>Web / UI Designer</h2>
+      
+    </header>
 
-<h2>Web / UI Designer</h2>
+    <main>
+          <section>
+            <p>We deliver digital success to showcase your business at its best.</p> 
+            <p><a href="exercises/page-1.html">A Tale of Two Cities</a></p>
+            <p><a href="exercises/page-2.html">Purple Rain</a></p>
+            <p><a href="exercises/page-3.html">Web page with multiple sections</a></p>
+            <p><a href="exercises/page-4.html">Vincent van Gogh</a></p>
+            <p><a href="exercises/page-5.html">Irish Tourism</a></p>
+           <p><a href="hero-video.html">Hero Video</a></p>
+          </section>
+        </main>    
+    </body>
 
-<p>I created this website to showcase some of my recent web design work.</p> 
-
-
-<p><a href="exercises/page-1.html">A Tale of Two Cities</a></p>
-
-<p><a href="exercises/page-4.html">Vincent van Gogh</a></p> 
-
-<p><a href="exercises/page-5.html">Irish Tourism</a></p>
-
-</body>
 </html>
